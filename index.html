@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Still Heart · A bulk picture downloader for galleries and albums.</title>
+  <title>Still Heart · Save whole galleries and albums to your own drive</title>
   <meta name="description" content="Save a whole gallery, or just the pictures you pick. Free for Windows.">
   <meta name="theme-color" content="#0E0D10">
   <meta property="og:title" content="Still Heart">
@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="heart.css">
   <link rel="stylesheet" href="theme.css">
   <script>document.documentElement.classList.add('js')</script>
@@ -26,35 +26,90 @@
 
   <header class="bar wrap">
     <a class="brand" href="#top" aria-label="Still Heart, back to top"><img src="assets/still-heart.svg" width="40" height="40" alt="">Still Heart</a>
-    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/">Heart Apps</a></nav>
-    <a class="button button-small" href="#download">Download</a>
+    <nav aria-label="Sections"><a href="#features">Features</a><a href="#accounts">Accounts</a><a href="#questions">Questions</a></nav>
+    <a class="button button-small" href="#get">Download</a>
   </header>
 
-  <section class="win-hero wrap" aria-labelledby="hero-title">
-    <div class="win-hero-text">
+  <!-- The headline across the page, then the words beside the window -->
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-text">
       <h1 id="hero-title" class="h1" data-reveal>Every picture<br> in the album</h1>
-      <p class="lede" data-reveal style="--i:1">Paste a gallery link. Still Heart lists every picture so you can choose, or saves the whole set in one go.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe">Download for Windows</a><span class="soft">Free · 86 MB</span></p>
+      <div class="hero-side">
+        <p class="lede" data-reveal style="--i:1">Paste a gallery link. Still Heart lists every picture so you can choose, or saves the whole set in one go.</p>
+        <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe">Download for Windows</a><a class="link" href="https://github.com/inigo-code/still-heart-site/releases">or see every release</a></p>
+        <ul class="facts" data-reveal style="--i:3"><li>Free, no ads</li><li>Sign in from inside the app</li><li>Files stay on your computer</li></ul>
+      </div>
     </div>
-    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Still Heart preview: a grid of pictures from one album, each with its size and a checkbox."></figure>
+    <figure class="hero-media"><div class="window" data-reveal style="--i:2"><img src="assets/stills_preview.webp" width="1240" height="800" alt="The Still Heart preview: a grid of pictures from one album, each with its size and a checkbox."></div></figure>
   </section>
 
+  <!-- Three things it does, one picture each -->
   <section id="features" class="section wrap" aria-labelledby="features-title">
-    <div class="head"><h2 id="features-title" class="h2" data-reveal>What it does</h2></div>
-    <dl class="more" data-reveal><div data-reveal style="--i:0"><dt>Scan, then choose</dt><dd>A scan shows every file as a thumbnail with its size. Click to pick, shift-click for a range, then download only those.</dd></div><div data-reveal style="--i:1"><dt>Hundreds of sites</dt><dd>Still Heart is built on gallery-dl, so it understands albums, profiles and posts rather than only the pictures on the page.</dd></div><div data-reveal style="--i:2"><dt>Nothing saved twice</dt><dd>A small local record remembers what you have, so running the same album again only fetches what’s new.</dd></div><div data-reveal style="--i:3"><dt>Folders your way</dt><dd>Sort by site, author, album or date, name files how you like, filter by type and minimum width, and set a pause between requests.</dd></div></dl>
+    <div class="head">
+      <h2 id="features-title" class="h2" data-reveal>Made for big albums</h2>
+      <p data-reveal style="--i:1">Everything between pasting a link and a tidy folder, and nothing you don’t need.</p>
+    </div>
+    <div class="rows">
+      <article class="row" aria-labelledby="f1">
+        <div class="row-text">
+          <h3 id="f1" class="h3" data-reveal>Scan, then choose</h3>
+          <p data-reveal style="--i:1">A scan shows every file as a thumbnail with its size. Click to pick, shift-click for a range, then download only those.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>Albums, profiles and posts</li><li>Filter by type and minimum width</li><li>Or skip the scan and save the lot</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/stills_preview.webp" width="1240" height="800" alt="A scan of one album as a grid of pictures, some selected." loading="lazy"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f2">
+        <div class="row-text">
+          <h3 id="f2" class="h3" data-reveal>Sign in, right here</h3>
+          <p data-reveal style="--i:1">Some sites only show their pictures to signed-in people. Sign in from Settings and Still Heart uses your account for that site.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>The site’s own page opens in a window</li><li>Pixiv’s token is handled for you</li><li>A failed job offers Sign in, then retries by itself</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/stills_accounts.webp" width="1240" height="800" alt="The Accounts list in Still Heart’s settings, with sites to sign in to." loading="lazy"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f3">
+        <div class="row-text">
+          <h3 id="f3" class="h3" data-reveal>Nothing saved twice</h3>
+          <p data-reveal style="--i:1">A small local record remembers what you have, so running the same album again only fetches what’s new.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>Folders by site, author, album or date</li><li>Name files how you like</li><li>A library of everything you’ve saved</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/stills_library.webp" width="1240" height="800" alt="The Still Heart library: saved pictures in a grid." loading="lazy"></div></figure>
+      </article>
+    </div>
   </section>
 
-  <section id="download" class="section wrap" aria-labelledby="get-title">
-    <div class="get" data-reveal>
+  <!-- Accounts, as a plain list -->
+  <section id="accounts" class="section wrap" aria-labelledby="accounts-title">
+    <div class="import">
       <div class="head">
-        <h2 id="get-title" class="h2">Get Still Heart</h2>
-        <p>One portable file. No installer and no account.</p>
+        <h2 id="accounts-title" class="h2" data-reveal>Sites that need your account</h2>
+        <p data-reveal style="--i:1">Sign in once under Settings, Accounts. The site’s own page opens in a window, so your password goes to the site and not to this app.</p>
+      </div>
+      <div data-reveal style="--i:1">
+        <ul class="sources"><li><strong>Pixiv</strong><span>Signs in and gets the token for you</span></li><li><strong>Instagram</strong><span>Sign in here</span></li><li><strong>X (Twitter)</strong><span>Sign in here</span></li><li><strong>Facebook</strong><span>Sign in here</span></li><li><strong>TikTok</strong><span>Sign in here</span></li><li><strong>DeviantArt</strong><span>Sign in here</span></li><li><strong>Reddit</strong><span>Sign in here</span></li><li><strong>Tumblr</strong><span>Sign in here</span></li><li><strong>Patreon</strong><span>Sign in here</span></li><li><strong>Fanbox and Fantia</strong><span>Sign in here</span></li><li><strong>Bluesky</strong><span>With an app password</span></li><li><strong>Civitai and Danbooru</strong><span>With an API key</span></li></ul>
+        <p class="import-after">About forty sites are listed, and Another site takes any address.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The smaller things, as a plain list -->
+  <section class="section wrap" aria-labelledby="more-title">
+    <div class="head"><h2 id="more-title" class="h2" data-reveal>And the small things</h2></div>
+    <dl class="more" data-reveal style="--i:1"><div><dt>Hundreds of sites</dt><dd>Built on gallery-dl, so it understands albums and profiles, not only the pictures on the page.</dd></div><div><dt>Keeps gallery-dl current</dt><dd>Update it from Settings when a site changes.</dd></div><div><dt>Moving pictures</dt><dd>Pixiv animations can be saved as MP4, WebM or GIF.</dd></div><div><dt>Be gentle</dt><dd>Set a pause between requests and a speed limit.</dd></div><div><dt>Watches your disk</dt><dd>Set a free-space floor and the queue pauses before the drive fills.</dd></div><div><dt>Recycle Bin</dt><dd>Remove a job from the list, and send its files to the Recycle Bin if you want to.</dd></div></dl>
+  </section>
+
+  <!-- Get it -->
+  <section id="get" class="section wrap" aria-labelledby="get-title">
+    <div class="get">
+      <div class="head">
+        <h2 id="get-title" class="h2" data-reveal>Get Still Heart</h2>
+        <p data-reveal style="--i:1">Free for Windows 10 and 11. One portable file, with nothing to install. Paste a link and see what’s in the album.</p>
       </div>
       <div class="ways">
-        <a class="way way-main" href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe"><img src="assets/still-heart.svg" width="48" height="48" alt=""><span><strong>Download StillHeart.exe</strong><span>Version 1.2.2 · 86 MB</span></span><span class="go">Download</span></a>
-        <a class="way" href="https://github.com/inigo-code/still-heart-site/releases"><img src="assets/heart-apps.svg" width="48" height="48" alt=""><span><strong>All releases</strong><span>Notes and checksums on GitHub</span></span><span class="go">Open</span></a>
-        <div class="notes">
-          <p><strong>Windows 10 or 11</strong>64-bit, with the WebView2 runtime that Windows 11 already includes.</p>
+        <a class="way way-main" href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe" data-reveal><img src="assets/still-heart.svg" width="48" height="48" alt=""><span><strong>Download StillHeart.exe</strong><span>Version 1.3.0 · 86 MB</span></span><span class="go">Download</span></a>
+        <a class="way" href="https://github.com/inigo-code/still-heart-site/releases" data-reveal style="--i:1"><span class="way-mark" aria-hidden="true">GH</span><span><strong>Every release on GitHub</strong><span>With notes and checksums</span></span><span class="go">Open</span></a>
+        <div class="notes" data-reveal style="--i:2">
           <p><strong>Windows may warn you</strong>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</p>
           <p><strong>The first open is slower</strong>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</p>
         </div>
@@ -62,16 +117,23 @@
     </div>
   </section>
 
-  <section id="questions" class="section wrap" aria-labelledby="faq-title">
-    <div class="faq">
-      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
-      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What does it work with?</summary><p>The sites gallery-dl supports. The Sites tab in the app lists them, with an example link for each.</p></details><details name="faq"><summary>Can it use my login?</summary><p>Yes, where a site needs one: point Still Heart at a cookies.txt file or your browser in Settings. Your cookies stay on your computer.</p></details><details name="faq"><summary>Does it get past paywalls?</summary><p>No. Still Heart doesn’t bypass paywalls, DRM or site bans. You need the right to save what you download, and a site’s own rules still apply.</p></details><details name="faq"><summary>Where do the files go?</summary><p>Into a downloads folder beside the app, or any folder you choose in Settings.</p></details><details name="faq"><summary>Does it need Python?</summary><p>No. It’s a single file. gallery-dl is inside, and Still Heart can update it for you.</p></details></div>
+  <!-- A note from the maker -->
+  <section class="section wrap" aria-labelledby="note-title">
+    <div class="note">
+      <h2 id="note-title" class="h2" data-reveal>A note from Inigo</h2>
+      <div data-reveal style="--i:1">
+        <div class="copy"><p>Your pictures stay on your computer, and your sign-ins stay there too. There are no ads and nothing to buy, and there won’t be. If a site stops working or something’s broken, write to me. I read everything.</p></div>
+        <p class="actions"><a class="button button-tone" href="mailto:inigo@tosstheworld.org?subject=Still%20Heart">Write to Inigo</a></p>
+      </div>
     </div>
   </section>
 
-  <section class="section wrap privacy" aria-labelledby="privacy-title">
-    <h2 id="privacy-title" class="h3" data-reveal>Privacy</h2>
-    <p class="soft" data-reveal style="--i:1">Still Heart has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
+  <!-- Questions -->
+  <section id="questions" class="section wrap" aria-labelledby="faq-title">
+    <div class="faq">
+      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
+      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>Is it free?</summary><p>Yes, completely: no ads, no subscriptions and no paid extras.</p></details><details name="faq"><summary>What does it work with?</summary><p>The sites gallery-dl supports. The Sites tab in the app lists them, with an example link for each.</p></details><details name="faq"><summary>Why does Pixiv ask for a refresh token?</summary><p>Pixiv doesn’t accept ordinary cookies from download tools, only a token from its own sign-in. Open Settings, Accounts, and choose Sign in next to Pixiv. Still Heart gets the token for you, and you never have to see it.</p></details><details name="faq"><summary>Is my password safe?</summary><p>You type it into the site’s own page, in a window, and Still Heart never sees it. It keeps only the session the site gives back, on your computer. Sign out deletes it.</p></details><details name="faq"><summary>What if a site won’t let me sign in here?</summary><p>Some sites refuse sign-ins from app windows. Sign in with your own browser instead and pick it under Other ways to sign in, or use a cookies.txt file.</p></details><details name="faq"><summary>Does it get past paywalls?</summary><p>No. It only sees what your own account can see. It doesn’t bypass paywalls, DRM or site bans. You need the right to save what you download, and a site’s own rules still apply.</p></details><details name="faq"><summary>Where do the files go?</summary><p>Into a downloads folder beside the app, or any folder you choose in Settings.</p></details><details name="faq"><summary>Does it need Python?</summary><p>No. It’s a single file. gallery-dl is inside, and Still Heart can update it for you.</p></details></div>
+    </div>
   </section>
 </main>
 
@@ -79,7 +141,7 @@
   <div class="wrap">
     <p class="foot-name" aria-hidden="true">Still Heart</p>
     <div class="foot-cols">
-      <nav aria-label="Still Heart"><h2>Still Heart</h2><a href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe">Download</a><a href="https://github.com/inigo-code/still-heart-site/releases">All releases</a></nav>
+      <nav aria-label="Still Heart"><h2>Still Heart</h2><a href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe">Download</a><a href="https://github.com/inigo-code/still-heart-site/releases">All releases</a><a href="privacy.html">Privacy</a></nav>
       <nav aria-label="For Windows"><h2>For Windows</h2><a class="to-app" href="https://inigo-code.github.io/frame-heart-site/"><img src="assets/frame-heart.svg" width="24" height="24" alt="">Frame Heart</a><a class="to-app" href="https://inigo-code.github.io/rush-heart-site/"><img src="assets/rush-heart.svg" width="24" height="24" alt="">Rush Heart</a></nav>
       <nav aria-label="For Android"><h2>For Android</h2><a class="to-app" href="https://inigo-code.github.io/prompt-heart-site/"><img src="assets/prompt-heart.png" width="24" height="24" alt="">Prompt Heart</a><a class="to-app" href="https://inigo-code.github.io/watch-heart-site/"><img src="assets/watch-heart.png" width="24" height="24" alt="">Watch Heart</a></nav>
       <nav aria-label="Heart Apps"><h2>Heart Apps</h2><a href="mailto:inigo@tosstheworld.org?subject=Still%20Heart">inigo@tosstheworld.org</a><a class="to-home" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="22" height="22" alt="">All Heart Apps</a></nav>
