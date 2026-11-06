@@ -3,84 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stills · A bulk picture downloader for galleries and albums.</title>
+  <title>Still Heart · A bulk picture downloader for galleries and albums.</title>
   <meta name="description" content="Save a whole gallery, or just the pictures you pick. Free for Windows.">
-  <meta name="theme-color" content="#100F0E">
-  <meta property="og:title" content="Stills">
-  <meta property="og:description" content="Save a whole gallery, or just the pictures you pick. Free for Windows.">
-  <meta property="og:image" content="https://inigo-code.github.io/stills-site/assets/preview.png">
+  <meta name="theme-color" content="#0E0D10">
+  <meta property="og:title" content="Still Heart">
+  <meta property="og:description" content="Save a whole gallery, or just the pictures you pick. A free Heart App for Windows.">
+  <meta property="og:image" content="https://inigo-code.github.io/still-heart-site/assets/preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/still-heart.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="spoolhouse.css">
-  <style>:root { --accent: #ff7a5c; --accent-ink: #2a0d05; --accent-hover: #ff9a82; }</style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="heart.css">
+  <link rel="stylesheet" href="theme.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <main id="top">
+
   <header class="bar wrap">
-    <a class="brand" href="#top" aria-label="Stills, back to top"><img src="assets/icon.svg" width="40" height="40" alt="">Stills</a>
-    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/spoolhouse-site/">Spoolhouse</a></nav>
+    <a class="brand" href="#top" aria-label="Still Heart, back to top"><img src="assets/still-heart.svg" width="40" height="40" alt="">Still Heart</a>
+    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/">Heart Apps</a></nav>
     <a class="button button-small" href="#download">Download</a>
   </header>
 
-  <section class="hero wrap" aria-labelledby="hero-title">
-    <div class="hero-text">
+  <section class="win-hero wrap" aria-labelledby="hero-title">
+    <div class="win-hero-text">
       <h1 id="hero-title" class="h1" data-reveal>Every picture<br> in the album</h1>
-      <p class="lede" data-reveal style="--i:1">Paste a gallery link. Stills lists every picture so you can choose, or saves the whole set in one go.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/stills-site/releases/latest/download/Stills.exe">Download for Windows</a><span class="soft">Free · 86 MB</span></p>
+      <p class="lede" data-reveal style="--i:1">Paste a gallery link. Still Heart lists every picture so you can choose, or saves the whole set in one go.</p>
+      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe">Download for Windows</a><span class="soft">Free · 86 MB</span></p>
     </div>
-    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Stills preview: a grid of pictures from one album, each with its size and a checkbox."></figure>
+    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Still Heart preview: a grid of pictures from one album, each with its size and a checkbox."></figure>
   </section>
 
   <section id="features" class="section wrap" aria-labelledby="features-title">
     <div class="head"><h2 id="features-title" class="h2" data-reveal>What it does</h2></div>
-    <dl class="features"><div data-reveal style="--i:0"><dt class="h3">Scan, then choose</dt><dd>A scan shows every file as a thumbnail with its size. Click to pick, shift-click for a range, then download only those.</dd></div><div data-reveal style="--i:1"><dt class="h3">Hundreds of sites</dt><dd>Stills is built on gallery-dl, so it understands albums, profiles and posts rather than only the pictures on the page.</dd></div><div data-reveal style="--i:2"><dt class="h3">Nothing saved twice</dt><dd>A small local record remembers what you have, so running the same album again only fetches what’s new.</dd></div><div data-reveal style="--i:3"><dt class="h3">Folders your way</dt><dd>Sort by site, author, album or date, name files how you like, filter by type and minimum width, and set a pause between requests.</dd></div></dl>
+    <dl class="more" data-reveal><div data-reveal style="--i:0"><dt>Scan, then choose</dt><dd>A scan shows every file as a thumbnail with its size. Click to pick, shift-click for a range, then download only those.</dd></div><div data-reveal style="--i:1"><dt>Hundreds of sites</dt><dd>Still Heart is built on gallery-dl, so it understands albums, profiles and posts rather than only the pictures on the page.</dd></div><div data-reveal style="--i:2"><dt>Nothing saved twice</dt><dd>A small local record remembers what you have, so running the same album again only fetches what’s new.</dd></div><div data-reveal style="--i:3"><dt>Folders your way</dt><dd>Sort by site, author, album or date, name files how you like, filter by type and minimum width, and set a pause between requests.</dd></div></dl>
   </section>
 
-  <section class="section wrap get" id="download" aria-labelledby="get-title">
-    <div class="get-main">
-      <h2 id="get-title" class="h2" data-reveal>Get Stills</h2>
-      <p class="lede" data-reveal style="--i:1">One portable file. No installer and no account.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/stills-site/releases/latest/download/Stills.exe">Download Stills.exe</a><span class="soft">Version 1.1.0 · 86 MB</span></p>
-      <p data-reveal style="--i:3"><a class="link" href="https://github.com/inigo-code/stills-site/releases">All releases and checksums</a></p>
+  <section id="download" class="section wrap" aria-labelledby="get-title">
+    <div class="get" data-reveal>
+      <div class="head">
+        <h2 id="get-title" class="h2">Get Still Heart</h2>
+        <p>One portable file. No installer and no account.</p>
+      </div>
+      <div class="ways">
+        <a class="way way-main" href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe"><img src="assets/still-heart.svg" width="48" height="48" alt=""><span><strong>Download StillHeart.exe</strong><span>Version 1.2.0 · 86 MB</span></span><span class="go">Download</span></a>
+        <a class="way" href="https://github.com/inigo-code/still-heart-site/releases"><img src="assets/heart-apps.svg" width="48" height="48" alt=""><span><strong>All releases</strong><span>Notes and checksums on GitHub</span></span><span class="go">Open</span></a>
+        <div class="notes">
+          <p><strong>Windows 10 or 11</strong>64-bit, with the WebView2 runtime that Windows 11 already includes.</p>
+          <p><strong>Windows may warn you</strong>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</p>
+          <p><strong>The first open is slower</strong>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</p>
+        </div>
+      </div>
     </div>
-    <dl class="steps" data-reveal style="--i:2">
-      <div><dt>Windows 10 or 11</dt><dd>64-bit, with the WebView2 runtime that Windows 11 already includes.</dd></div>
-      <div><dt>Windows may warn you</dt><dd>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</dd></div>
-      <div><dt>The first open is slower</dt><dd>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</dd></div>
-    </dl>
   </section>
 
   <section id="questions" class="section wrap" aria-labelledby="faq-title">
     <div class="faq">
       <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
-      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What does it work with?</summary><p>The sites gallery-dl supports. The Sites tab in the app lists them, with an example link for each.</p></details><details name="faq"><summary>Can it use my login?</summary><p>Yes, where a site needs one: point Stills at a cookies.txt file or your browser in Settings. Your cookies stay on your computer.</p></details><details name="faq"><summary>Does it get past paywalls?</summary><p>No. Stills doesn’t bypass paywalls, DRM or site bans. You need the right to save what you download, and a site’s own rules still apply.</p></details><details name="faq"><summary>Where do the files go?</summary><p>Into a downloads folder beside the app, or any folder you choose in Settings.</p></details><details name="faq"><summary>Does it need Python?</summary><p>No. It’s a single file. gallery-dl is inside, and Stills can update it for you.</p></details></div>
+      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What does it work with?</summary><p>The sites gallery-dl supports. The Sites tab in the app lists them, with an example link for each.</p></details><details name="faq"><summary>Can it use my login?</summary><p>Yes, where a site needs one: point Still Heart at a cookies.txt file or your browser in Settings. Your cookies stay on your computer.</p></details><details name="faq"><summary>Does it get past paywalls?</summary><p>No. Still Heart doesn’t bypass paywalls, DRM or site bans. You need the right to save what you download, and a site’s own rules still apply.</p></details><details name="faq"><summary>Where do the files go?</summary><p>Into a downloads folder beside the app, or any folder you choose in Settings.</p></details><details name="faq"><summary>Does it need Python?</summary><p>No. It’s a single file. gallery-dl is inside, and Still Heart can update it for you.</p></details></div>
     </div>
   </section>
 
   <section class="section wrap privacy" aria-labelledby="privacy-title">
     <h2 id="privacy-title" class="h3" data-reveal>Privacy</h2>
-    <p class="soft" data-reveal style="--i:1">Stills has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
+    <p class="soft" data-reveal style="--i:1">Still Heart has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <div class="bars" aria-hidden="true"><i class="b-plates"></i><i class="b-stills"></i><i class="b-rushes"></i></div>
+    <p class="foot-name" aria-hidden="true">Still Heart</p>
     <div class="foot-cols">
-      <nav aria-label="Spoolhouse"><h2>Spoolhouse</h2><a class="to-app" href="https://inigo-code.github.io/plates-site/"><img src="assets/plates.svg" width="24" height="24" alt="">Plates</a><a class="to-app" href="https://inigo-code.github.io/rushes-site/"><img src="assets/rushes.svg" width="24" height="24" alt="">Rushes</a><a class="to-home" href="https://inigo-code.github.io/spoolhouse-site/"><img src="assets/spoolhouse.svg" width="22" height="22" alt="">All of Spoolhouse</a></nav>
-      <nav aria-label="Also by Inigo"><h2>Also by Inigo</h2><a class="to-app" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="24" height="24" alt="">Heart Apps, for Android</a></nav>
-      <nav aria-label="Contact"><h2>Contact</h2><a href="mailto:inigo@tosstheworld.org?subject=Spoolhouse">inigo@tosstheworld.org</a><a href="https://github.com/inigo-code">GitHub</a></nav>
+      <nav aria-label="Still Heart"><h2>Still Heart</h2><a href="https://github.com/inigo-code/still-heart-site/releases/latest/download/StillHeart.exe">Download</a><a href="https://github.com/inigo-code/still-heart-site/releases">All releases</a></nav>
+      <nav aria-label="For Windows"><h2>For Windows</h2><a class="to-app" href="https://inigo-code.github.io/frame-heart-site/"><img src="assets/frame-heart.svg" width="24" height="24" alt="">Frame Heart</a><a class="to-app" href="https://inigo-code.github.io/rush-heart-site/"><img src="assets/rush-heart.svg" width="24" height="24" alt="">Rush Heart</a></nav>
+      <nav aria-label="For Android"><h2>For Android</h2><a class="to-app" href="https://inigo-code.github.io/prompt-heart-site/"><img src="assets/prompt-heart.png" width="24" height="24" alt="">Prompt Heart</a><a class="to-app" href="https://inigo-code.github.io/watch-heart-site/"><img src="assets/watch-heart.png" width="24" height="24" alt="">Watch Heart</a></nav>
+      <nav aria-label="Heart Apps"><h2>Heart Apps</h2><a href="mailto:inigo@tosstheworld.org?subject=Still%20Heart">inigo@tosstheworld.org</a><a class="to-home" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="22" height="22" alt="">All Heart Apps</a></nav>
     </div>
     <div class="foot-last"><p>© 2026 Inigo. Free apps, no ads.</p><a href="#top">Back to the top</a></div>
   </div>
 </footer>
-<script src="spoolhouse.js" defer></script>
+
+<script src="heart.js" defer></script>
+
 </body>
 </html>
